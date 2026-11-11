@@ -1,0 +1,369 @@
+route,from_city,to_city,round_trip_price_usd,cheapest_day,best_booking_month
+singapore-to-johor-bahru,Singapore,Johor Bahru,25,Tuesday,October
+los-angeles-to-san-diego,Los Angeles,San Diego,40,Tuesday,October
+seattle-to-portland,Seattle,Portland,40,Tuesday,October
+austin-to-houston,Austin,Houston,45,Tuesday,October
+austin-to-dallas,Austin,Dallas,50,Tuesday,October
+barcelona-to-madrid,Barcelona,Madrid,50,Tuesday,October
+bodrum-to-istanbul,Bodrum,Istanbul,50,Tuesday,October
+dallas-to-houston,Dallas,Houston,50,Tuesday,October
+kuala-lumpur-to-singapore,Kuala Lumpur,Singapore,50,Tuesday,October
+los-angeles-to-las-vegas,Los Angeles,Las Vegas,50,Tuesday,October
+madrid-to-barcelona,Madrid,Barcelona,50,Tuesday,October
+singapore-to-kuala-lumpur,Singapore,Kuala Lumpur,50,Tuesday,October
+atlanta-to-charlotte,Atlanta,Charlotte,55,Tuesday,October
+atlanta-to-nashville,Atlanta,Nashville,55,Tuesday,October
+denver-to-salt-lake-city,Denver,Salt Lake City,55,Tuesday,October
+new-orleans-to-houston,New Orleans,Houston,55,Tuesday,October
+orlando-to-miami,Orlando,Miami,55,Tuesday,October
+antalya-to-istanbul,Antalya,Istanbul,60,Tuesday,October
+denver-to-las-vegas,Denver,Las Vegas,60,Tuesday,October
+los-angeles-to-phoenix,Los Angeles,Phoenix,60,Tuesday,October
+miami-to-orlando,Miami,Orlando,60,Tuesday,October
+nashville-to-charlotte,Nashville,Charlotte,60,Tuesday,October
+dallas-to-new-orleans,Dallas,New Orleans,65,Tuesday,October
+nashville-to-new-orleans,Nashville,New Orleans,65,Tuesday,October
+new-orleans-to-dallas,New Orleans,Dallas,65,Tuesday,October
+new-york-to-newark,New York,Newark,65,Tuesday,October
+san-francisco-to-las-vegas,San Francisco,Las Vegas,65,Tuesday,October
+san-francisco-to-portland,San Francisco,Portland,65,Tuesday,October
+amsterdam-to-berlin,Amsterdam,Berlin,70,Tuesday,October
+atlanta-to-new-orleans,Atlanta,New Orleans,70,Tuesday,October
+atlanta-to-orlando,Atlanta,Orlando,70,Tuesday,October
+berlin-to-amsterdam,Berlin,Amsterdam,70,Tuesday,October
+chicago-to-detroit,Chicago,Detroit,70,Tuesday,October
+chicago-to-minneapolis,Chicago,Minneapolis,70,Tuesday,October
+los-angeles-to-san-francisco,Los Angeles,San Francisco,70,Tuesday,October
+mumbai-to-bangalore,Mumbai,Bangalore,70,Tuesday,October
+new-orleans-to-atlanta,New Orleans,Atlanta,70,Tuesday,October
+new-york-to-philadelphia,New York,Philadelphia,70,Tuesday,October
+san-francisco-to-los-angeles,San Francisco,Los Angeles,70,Tuesday,October
+san-francisco-to-phoenix,San Francisco,Phoenix,70,Tuesday,October
+amsterdam-to-london,Amsterdam,London,75,Tuesday,October
+atlanta-to-houston,Atlanta,Houston,75,Tuesday,October
+chicago-to-nashville,Chicago,Nashville,75,Tuesday,October
+denver-to-phoenix,Denver,Phoenix,75,Tuesday,October
+london-to-amsterdam,London,Amsterdam,75,Tuesday,October
+amsterdam-to-paris,Amsterdam,Paris,80,Tuesday,October
+bangkok-to-phnom-penh,Bangkok,Phnom Penh,80,Tuesday,October
+barcelona-to-paris,Barcelona,Paris,80,Tuesday,October
+barcelona-to-rome,Barcelona,Rome,80,Tuesday,October
+dallas-to-denver,Dallas,Denver,80,Tuesday,October
+dallas-to-nashville,Dallas,Nashville,80,Tuesday,October
+delhi-to-mumbai,Delhi,Mumbai,80,Tuesday,October
+denver-to-minneapolis,Denver,Minneapolis,80,Tuesday,October
+london-to-paris,London,Paris,80,Tuesday,January
+los-angeles-to-portland,Los Angeles,Portland,80,Tuesday,October
+melbourne-to-sydney,Melbourne,Sydney,80,Tuesday,October
+miami-to-atlanta,Miami,Atlanta,80,Tuesday,October
+mumbai-to-delhi,Mumbai,Delhi,80,Tuesday,October
+nashville-to-dallas,Nashville,Dallas,80,Tuesday,October
+nashville-to-orlando,Nashville,Orlando,80,Tuesday,October
+new-york-to-boston,New York,Boston,80,Tuesday,October
+paris-to-amsterdam,Paris,Amsterdam,80,Tuesday,October
+paris-to-barcelona,Paris,Barcelona,80,Tuesday,October
+paris-to-london,Paris,London,80,Tuesday,October
+rome-to-barcelona,Rome,Barcelona,80,Tuesday,October
+san-francisco-to-seattle,San Francisco,Seattle,80,Tuesday,October
+seattle-to-san-francisco,Seattle,San Francisco,80,Tuesday,October
+sydney-to-melbourne,Sydney,Melbourne,80,Tuesday,August
+orlando-to-atlanta,Orlando,Atlanta,80,Tuesday,October
+atl-to-orlando,Atlanta,Orlando,80,Tuesday,October
+atlanta-to-dallas,Atlanta,Dallas,85,Tuesday,October
+austin-to-nashville,Austin,Nashville,85,Tuesday,October
+bangkok-to-siem-reap,Bangkok,Siem Reap,85,Tuesday,October
+berlin-to-paris,Berlin,Paris,85,Tuesday,October
+berlin-to-rome,Berlin,Rome,85,Tuesday,October
+chicago-to-atlanta,Chicago,Atlanta,85,Tuesday,October
+dallas-to-atlanta,Dallas,Atlanta,85,Tuesday,October
+los-angeles-to-denver,Los Angeles,Denver,85,Tuesday,October
+madrid-to-paris,Madrid,Paris,85,Tuesday,October
+miami-to-new-orleans,Miami,New Orleans,85,Tuesday,October
+new-york-to-washington,New York,Washington,85,Tuesday,October
+paris-to-berlin,Paris,Berlin,85,Tuesday,October
+paris-to-madrid,Paris,Madrid,85,Tuesday,October
+rome-to-berlin,Rome,Berlin,85,Tuesday,October
+seattle-to-las-vegas,Seattle,Las Vegas,85,Tuesday,October
+sydney-to-brisbane,Sydney,Brisbane,85,Tuesday,October
+amsterdam-to-barcelona,Amsterdam,Barcelona,90,Tuesday,October
+austin-to-denver,Austin,Denver,90,Tuesday,October
+barcelona-to-amsterdam,Barcelona,Amsterdam,90,Tuesday,October
+berlin-to-london,Berlin,London,90,Tuesday,October
+chicago-to-denver,Chicago,Denver,90,Tuesday,October
+dallas-to-phoenix,Dallas,Phoenix,90,Tuesday,October
+delhi-to-bangalore,Delhi,Bangalore,90,Tuesday,October
+london-to-berlin,London,Berlin,90,Tuesday,October
+los-angeles-to-seattle,Los Angeles,Seattle,90,Tuesday,October
+madrid-to-rome,Madrid,Rome,90,Tuesday,October
+miami-to-cancun,Miami,Cancun,90,Tuesday,October
+miami-to-charlotte,Miami,Charlotte,90,Tuesday,October
+nashville-to-denver,Nashville,Denver,90,Tuesday,October
+new-york-to-detroit,New York,Detroit,90,Tuesday,October
+paris-to-rome,Paris,Rome,90,Tuesday,October
+rome-to-paris,Rome,Paris,90,Tuesday,October
+seattle-to-los-angeles,Seattle,Los Angeles,90,Tuesday,October
+orlando-to-nashville,Orlando,Nashville,90,Tuesday,October
+amsterdam-to-rome,Amsterdam,Rome,95,Tuesday,October
+bangkok-to-ho-chi-minh-city,Bangkok,Ho Chi Minh City,95,Tuesday,October
+barcelona-to-london,Barcelona,London,95,Tuesday,October
+denver-to-portland,Denver,Portland,95,Tuesday,October
+london-to-barcelona,London,Barcelona,95,Tuesday,October
+miami-to-nashville,Miami,Nashville,95,Tuesday,October
+new-orleans-to-chicago,New Orleans,Chicago,95,Tuesday,October
+new-york-to-charlotte,New York,Charlotte,95,Tuesday,October
+rome-to-amsterdam,Rome,Amsterdam,95,Tuesday,October
+san-francisco-to-denver,San Francisco,Denver,95,Tuesday,October
+bangkok-to-hanoi,Bangkok,Hanoi,100,Tuesday,October
+barcelona-to-berlin,Barcelona,Berlin,100,Tuesday,October
+berlin-to-barcelona,Berlin,Barcelona,100,Tuesday,October
+cape-town-to-johannesburg,Cape Town,Johannesburg,100,Tuesday,October
+chicago-to-dallas,Chicago,Dallas,100,Tuesday,October
+chicago-to-new-york,Chicago,New York,100,Tuesday,October
+denver-to-seattle,Denver,Seattle,100,Tuesday,October
+dubai-to-abu-dhabi,Dubai,Abu Dhabi,100,Tuesday,October
+kuala-lumpur-to-jakarta,Kuala Lumpur,Jakarta,100,Tuesday,October
+london-to-madrid,London,Madrid,100,Tuesday,October
+london-to-rome,London,Rome,100,Tuesday,October
+madrid-to-amsterdam,Madrid,Amsterdam,100,Tuesday,October
+madrid-to-london,Madrid,London,100,Tuesday,October
+new-york-to-chicago,New York,Chicago,100,Tuesday,October
+rome-to-london,Rome,London,100,Tuesday,October
+seattle-to-denver,Seattle,Denver,100,Tuesday,October
+singapore-to-jakarta,Singapore,Jakarta,100,Tuesday,October
+orlando-to-washington,Orlando,Washington,100,Tuesday,October
+chicago-to-houston,Chicago,Houston,105,Tuesday,October
+london-to-lisbon,London,Lisbon,105,Tuesday,October
+seattle-to-minneapolis,Seattle,Minneapolis,105,Tuesday,October
+atlanta-to-denver,Atlanta,Denver,110,Tuesday,October
+austin-to-las-vegas,Austin,Las Vegas,110,Tuesday,October
+bangkok-to-kuala-lumpur,Bangkok,Kuala Lumpur,110,Tuesday,October
+dallas-to-las-vegas,Dallas,Las Vegas,110,Tuesday,October
+kuala-lumpur-to-bangkok,Kuala Lumpur,Bangkok,110,Tuesday,October
+los-angeles-to-dallas,Los Angeles,Dallas,110,Tuesday,October
+miami-to-houston,Miami,Houston,110,Tuesday,October
+nairobi-to-entebbe,Nairobi,Entebbe,110,Tuesday,October
+new-orleans-to-denver,New Orleans,Denver,110,Tuesday,October
+new-york-to-atlanta,New York,Atlanta,110,Tuesday,October
+new-york-to-nashville,New York,Nashville,110,Tuesday,October
+new-york-to-orlando,New York,Orlando,110,Tuesday,October
+orlando-to-philadelphia,Orlando,Philadelphia,110,Tuesday,October
+orlando-to-chicago,Orlando,Chicago,110,Tuesday,October
+ord-to-orlando,Chicago,Orlando,110,Tuesday,October
+austin-to-los-angeles,Austin,Los Angeles,115,Tuesday,October
+new-york-to-minneapolis,New York,Minneapolis,115,Tuesday,October
+seattle-to-phoenix,Seattle,Phoenix,115,Tuesday,October
+bangkok-to-singapore,Bangkok,Singapore,120,Tuesday,October
+chicago-to-las-vegas,Chicago,Las Vegas,120,Tuesday,October
+chicago-to-miami,Chicago,Miami,120,Tuesday,October
+connecticut-to-orlando,Connecticut,Orlando,120,Tuesday,October
+delhi-to-kathmandu,Delhi,Kathmandu,120,Tuesday,October
+dubai-to-muscat,Dubai,Muscat,120,Tuesday,October
+hong-kong-to-taipei,Hong Kong,Taipei,120,Tuesday,October
+los-angeles-to-houston,Los Angeles,Houston,120,Tuesday,October
+miami-to-chicago,Miami,Chicago,120,Tuesday,October
+miami-to-dallas,Miami,Dallas,120,Tuesday,October
+miami-to-new-york,Miami,New York,120,Tuesday,October
+miami-to-san-juan,Miami,San Juan,120,Tuesday,October
+nairobi-to-dar-es-salaam,Nairobi,Dar Es Salaam,120,Tuesday,October
+new-york-to-miami,New York,Miami,120,Tuesday,September
+singapore-to-bangkok,Singapore,Bangkok,120,Tuesday,September
+orlando-to-dallas,Orlando,Dallas,120,Tuesday,October
+dfw-to-orlando,Dallas,Orlando,120,Tuesday,October
+nashville-to-las-vegas,Nashville,Las Vegas,125,Tuesday,October
+chicago-to-los-angeles,Chicago,Los Angeles,130,Tuesday,October
+chicago-to-phoenix,Chicago,Phoenix,130,Tuesday,October
+connecticut-to-florida,Connecticut,Florida,130,Tuesday,October
+connecticut-to-tampa,Connecticut,Tampa,130,Tuesday,October
+los-angeles-to-chicago,Los Angeles,Chicago,130,Tuesday,October
+nairobi-to-kigali,Nairobi,Kigali,130,Tuesday,October
+new-orleans-to-los-angeles,New Orleans,Los Angeles,130,Tuesday,October
+san-francisco-to-dallas,San Francisco,Dallas,130,Tuesday,October
+singapore-to-bali,Singapore,Bali,130,Tuesday,October
+orlando-to-detroit,Orlando,Detroit,130,Tuesday,October
+connecticut-to-fort-lauderdale,Connecticut,Fort Lauderdale,135,Tuesday,October
+los-angeles-to-minneapolis,Los Angeles,Minneapolis,135,Tuesday,October
+new-york-to-new-orleans,New York,New Orleans,135,Tuesday,October
+san-francisco-to-houston,San Francisco,Houston,135,Tuesday,October
+atlanta-to-las-vegas,Atlanta,Las Vegas,140,Tuesday,October
+chicago-to-san-francisco,Chicago,San Francisco,140,Tuesday,October
+chicago-to-seattle,Chicago,Seattle,140,Tuesday,October
+connecticut-to-miami,Connecticut,Miami,140,Tuesday,October
+hong-kong-to-manila,Hong Kong,Manila,140,Tuesday,October
+los-angeles-to-atlanta,Los Angeles,Atlanta,140,Tuesday,October
+new-york-to-dallas,New York,Dallas,140,Tuesday,October
+san-francisco-to-chicago,San Francisco,Chicago,140,Tuesday,October
+orlando-to-boston,Orlando,Boston,140,Tuesday,October
+bos-to-orlando,Boston,Orlando,140,Tuesday,October
+new-york-to-houston,New York,Houston,145,Tuesday,October
+buenos-aires-to-sao-paulo,Buenos Aires,Sao Paulo,150,Tuesday,October
+dubai-to-doha,Dubai,Doha,150,Tuesday,October
+miami-to-denver,Miami,Denver,150,Tuesday,October
+new-york-to-denver,New York,Denver,150,Tuesday,October
+rome-to-istanbul,Rome,Istanbul,150,Tuesday,October
+sao-paulo-to-buenos-aires,Sao Paulo,Buenos Aires,150,Tuesday,October
+seoul-to-osaka,Seoul,Osaka,150,Tuesday,October
+seoul-to-shanghai,Seoul,Shanghai,150,Tuesday,October
+orlando-to-denver,Orlando,Denver,150,Tuesday,October
+new-york-to-austin,New York,Austin,155,Tuesday,October
+dubai-to-kuwait,Dubai,Kuwait,160,Tuesday,October
+hong-kong-to-shanghai,Hong Kong,Shanghai,160,Tuesday,October
+los-angeles-to-miami,Los Angeles,Miami,160,Tuesday,October
+miami-to-los-angeles,Miami,Los Angeles,160,Tuesday,October
+miami-to-phoenix,Miami,Phoenix,160,Tuesday,October
+new-york-to-salt-lake-city,New York,Salt Lake City,160,Tuesday,October
+orlando-to-phoenix,Orlando,Phoenix,160,Tuesday,January
+phx-to-orlando,Phoenix,Orlando,160,Tuesday,January
+los-angeles-to-philadelphia,Los Angeles,Philadelphia,165,Tuesday,October
+new-york-to-phoenix,New York,Phoenix,165,Tuesday,October
+cairo-to-beirut,Cairo,Beirut,170,Tuesday,October
+kuala-lumpur-to-manila,Kuala Lumpur,Manila,170,Tuesday,October
+miami-to-san-francisco,Miami,San Francisco,170,Tuesday,October
+new-york-to-las-vegas,New York,Las Vegas,170,Tuesday,October
+orlando-to-los-angeles,Orlando,Los Angeles,170,Tuesday,September
+new-york-to-san-diego,New York,San Diego,175,Tuesday,October
+antalya-to-berlin,Antalya,Berlin,180,Tuesday,October
+bangkok-to-hong-kong,Bangkok,Hong Kong,180,Tuesday,October
+cairo-to-amman,Cairo,Amman,180,Tuesday,October
+hong-kong-to-bangkok,Hong Kong,Bangkok,180,Tuesday,October
+los-angeles-to-new-york,Los Angeles,New York,180,Tuesday,October
+new-york-to-cancun,New York,Cancun,180,Tuesday,October
+new-york-to-los-angeles,New York,Los Angeles,180,Tuesday,September
+seoul-to-taipei,Seoul,Taipei,180,Tuesday,October
+singapore-to-manila,Singapore,Manila,180,Tuesday,October
+orlando-to-san-francisco,Orlando,San Francisco,180,Tuesday,September
+new-york-to-portland,New York,Portland,185,Tuesday,October
+new-york-to-seattle,New York,Seattle,185,Tuesday,October
+bodrum-to-london,Bodrum,London,190,Tuesday,October
+cairo-to-jeddah,Cairo,Jeddah,190,Tuesday,October
+new-york-to-san-francisco,New York,San Francisco,190,Tuesday,October
+antalya-to-london,Antalya,London,200,Tuesday,October
+bangkok-to-manila,Bangkok,Manila,200,Tuesday,October
+berlin-to-istanbul,Berlin,Istanbul,200,Tuesday,October
+cairo-to-bahrain,Cairo,Bahrain,200,Tuesday,October
+karachi-to-dubai,Karachi,Dubai,200,Tuesday,October
+seoul-to-tokyo,Seoul,Tokyo,200,Tuesday,October
+tokyo-to-seoul,Tokyo,Seoul,200,Wednesday,March
+toronto-to-cancun,Toronto,Cancun,200,Tuesday,October
+cairo-to-kuwait,Cairo,Kuwait,210,Tuesday,October
+cairo-to-istanbul,Cairo,Istanbul,220,Tuesday,November
+dubai-to-jeddah,Dubai,Jeddah,220,Tuesday,October
+istanbul-to-cairo,Istanbul,Cairo,220,Tuesday,October
+seoul-to-manila,Seoul,Manila,220,Tuesday,October
+kuala-lumpur-to-hong-kong,Kuala Lumpur,Hong Kong,230,Tuesday,October
+cairo-to-riyadh,Cairo,Riyadh,240,Tuesday,October
+hong-kong-to-seoul,Hong Kong,Seoul,240,Tuesday,October
+istanbul-to-rome,Istanbul,Rome,240,Tuesday,October
+mumbai-to-bangkok,Mumbai,Bangkok,240,Tuesday,October
+seoul-to-hong-kong,Seoul,Hong Kong,240,Tuesday,October
+bangkok-to-taipei,Bangkok,Taipei,250,Tuesday,October
+cairo-to-dubai,Cairo,Dubai,250,Friday,October
+delhi-to-bangkok,Delhi,Bangkok,250,Tuesday,October
+dubai-to-cairo,Dubai,Cairo,250,Tuesday,October
+hong-kong-to-singapore,Hong Kong,Singapore,250,Tuesday,October
+islamabad-to-dubai,Islamabad,Dubai,250,Tuesday,October
+istanbul-to-berlin,Istanbul,Berlin,250,Tuesday,October
+los-angeles-to-honolulu,Los Angeles,Honolulu,250,Tuesday,October
+singapore-to-hong-kong,Singapore,Hong Kong,250,Tuesday,October
+lahore-to-dubai,Lahore,Dubai,260,Tuesday,October
+mumbai-to-male,Mumbai,Malé,260,Tuesday,October
+karachi-to-jeddah,Karachi,Jeddah,270,Tuesday,October
+tokyo-to-taipei,Tokyo,Taipei,270,Tuesday,October
+delhi-to-male,Delhi,Malé,280,Tuesday,October
+dubai-to-mumbai,Dubai,Mumbai,280,Tuesday,October
+istanbul-to-amsterdam,Istanbul,Amsterdam,280,Tuesday,October
+kuala-lumpur-to-delhi,Kuala Lumpur,Delhi,280,Tuesday,October
+mumbai-to-dubai,Mumbai,Dubai,280,Tuesday,October
+tokyo-to-shanghai,Tokyo,Shanghai,280,Tuesday,October
+cairo-to-abu-dhabi,Cairo,Abu Dhabi,290,Tuesday,October
+islamabad-to-jeddah,Islamabad,Jeddah,290,Tuesday,October
+mumbai-to-singapore,Mumbai,Singapore,290,Tuesday,October
+singapore-to-mumbai,Singapore,Mumbai,290,Tuesday,October
+delhi-to-dubai,Delhi,Dubai,300,Tuesday,October
+delhi-to-singapore,Delhi,Singapore,300,Tuesday,October
+dubai-to-amman,Dubai,Amman,300,Tuesday,October
+dubai-to-delhi,Dubai,Delhi,300,Tuesday,October
+istanbul-to-paris,Istanbul,Paris,300,Tuesday,October
+lahore-to-jeddah,Lahore,Jeddah,300,Tuesday,October
+singapore-to-delhi,Singapore,Delhi,300,Tuesday,October
+tokyo-to-manila,Tokyo,Manila,300,Tuesday,October
+cairo-to-doha,Cairo,Doha,310,Tuesday,October
+cairo-to-muscat,Cairo,Muscat,320,Tuesday,October
+hong-kong-to-tokyo,Hong Kong,Tokyo,320,Tuesday,October
+istanbul-to-london,Istanbul,London,320,Tuesday,October
+lahore-to-male,Lahore,Malé,320,Tuesday,October
+london-to-istanbul,London,Istanbul,320,Tuesday,October
+tokyo-to-hong-kong,Tokyo,Hong Kong,320,Tuesday,October
+bangkok-to-seoul,Bangkok,Seoul,350,Tuesday,October
+cairo-to-nairobi,Cairo,Nairobi,350,Tuesday,October
+dubai-to-istanbul,Dubai,Istanbul,350,Tuesday,October
+istanbul-to-dubai,Istanbul,Dubai,350,Tuesday,October
+lahore-to-istanbul,Lahore,Istanbul,350,Tuesday,October
+seoul-to-bangkok,Seoul,Bangkok,350,Tuesday,October
+karachi-to-istanbul,Karachi,Istanbul,360,Tuesday,October
+cairo-to-casablanca,Cairo,Casablanca,380,Tuesday,October
+nairobi-to-dubai,Nairobi,Dubai,380,Tuesday,October
+bangkok-to-tokyo,Bangkok,Tokyo,400,Tuesday,October
+dubai-to-manila,Dubai,Manila,400,Tuesday,October
+london-to-new-york,London,New York,400,Tuesday,October
+new-york-to-honolulu,New York,Honolulu,400,Tuesday,October
+tokyo-to-bangkok,Tokyo,Bangkok,400,Tuesday,October
+new-york-to-london,New York,London,400,Tuesday,January
+dubai-to-kuala-lumpur,Dubai,Kuala Lumpur,410,Tuesday,October
+kuala-lumpur-to-dubai,Kuala Lumpur,Dubai,410,Tuesday,October
+paris-to-new-york,Paris,New York,410,Tuesday,October
+cairo-to-paris,Cairo,Paris,420,Tuesday,March
+dubai-to-bangkok,Dubai,Bangkok,420,Tuesday,October
+lagos-to-johannesburg,Lagos,Johannesburg,420,Tuesday,October
+miami-to-london,Miami,London,420,Tuesday,October
+singapore-to-tokyo,Singapore,Tokyo,420,Tuesday,October
+tokyo-to-singapore,Tokyo,Singapore,420,Tuesday,October
+dubai-to-johor-bahru,Dubai,Johor Bahru,430,Tuesday,October
+kuala-lumpur-to-tokyo,Kuala Lumpur,Tokyo,430,Tuesday,October
+amsterdam-to-dubai,Amsterdam,Dubai,440,Tuesday,October
+dubai-to-jakarta,Dubai,Jakarta,440,Tuesday,October
+melbourne-to-singapore,Melbourne,Singapore,440,Tuesday,October
+cairo-to-london,Cairo,London,450,Wednesday,January
+dubai-to-singapore,Dubai,Singapore,450,Tuesday,October
+lagos-to-london,Lagos,London,450,Tuesday,October
+new-york-to-dubai,New York,Dubai,450,Tuesday,October
+singapore-to-dubai,Singapore,Dubai,450,Tuesday,October
+sydney-to-singapore,Sydney,Singapore,450,Tuesday,October
+new-york-to-paris,New York,Paris,450,Tuesday,January
+dubai-to-paris,Dubai,Paris,460,Tuesday,November
+karachi-to-london,Karachi,London,460,Tuesday,October
+paris-to-dubai,Paris,Dubai,460,Tuesday,October
+islamabad-to-london,Islamabad,London,470,Tuesday,October
+dubai-to-london,Dubai,London,480,Tuesday,January
+hong-kong-to-sydney,Hong Kong,Sydney,480,Tuesday,October
+istanbul-to-bangkok,Istanbul,Bangkok,480,Tuesday,October
+lagos-to-dubai,Lagos,Dubai,480,Tuesday,October
+lahore-to-london,Lahore,London,480,Tuesday,October
+london-to-dubai,London,Dubai,480,Tuesday,October
+melbourne-to-bangkok,Melbourne,Bangkok,480,Tuesday,October
+sydney-to-hong-kong,Sydney,Hong Kong,480,Tuesday,October
+cairo-to-johannesburg,Cairo,Johannesburg,500,Tuesday,October
+delhi-to-london,Delhi,London,500,Tuesday,October
+sao-paulo-to-miami,Sao Paulo,Miami,500,Tuesday,October
+mumbai-to-london,Mumbai,London,520,Tuesday,October
+nairobi-to-london,Nairobi,London,520,Tuesday,October
+buenos-aires-to-miami,Buenos Aires,Miami,550,Tuesday,October
+cape-town-to-dubai,Cape Town,Dubai,550,Tuesday,October
+london-to-bangkok,London,Bangkok,550,Tuesday,October
+los-angeles-to-tokyo,Los Angeles,Tokyo,550,Tuesday,October
+sydney-to-tokyo,Sydney,Tokyo,550,Tuesday,October
+tokyo-to-los-angeles,Tokyo,Los Angeles,550,Tuesday,October
+hong-kong-to-london,Hong Kong,London,580,Tuesday,October
+sao-paulo-to-new-york,Sao Paulo,New York,580,Tuesday,October
+seoul-to-los-angeles,Seoul,Los Angeles,580,Tuesday,October
+london-to-singapore,London,Singapore,600,Tuesday,October
+los-angeles-to-seoul,Los Angeles,Seoul,600,Tuesday,October
+singapore-to-london,Singapore,London,600,Tuesday,October
+cape-town-to-london,Cape Town,London,650,Tuesday,October
+london-to-tokyo,London,Tokyo,650,Tuesday,October
+sao-paulo-to-london,Sao Paulo,London,650,Tuesday,October
+paris-to-tokyo,Paris,Tokyo,680,Tuesday,October
+buenos-aires-to-madrid,Buenos Aires,Madrid,700,Tuesday,October
+seoul-to-new-york,Seoul,New York,700,Tuesday,October
+sydney-to-dubai,Sydney,Dubai,700,Tuesday,October
+tokyo-to-new-york,Tokyo,New York,700,Tuesday,October
+sydney-to-london,Sydney,London,900,Tuesday,October

@@ -1,0 +1,40 @@
+section,item,metric,value
+carrier_ytd_ontime,Alaska Airlines,percent_on_time_jan_jun_2026,80.51
+carrier_ytd_ontime,Alaska Airlines,rank,1
+carrier_ytd_ontime,Delta Air Lines,percent_on_time_jan_jun_2026,79.33
+carrier_ytd_ontime,Delta Air Lines,rank,2
+carrier_ytd_ontime,United Airlines,percent_on_time_jan_jun_2026,75.77
+carrier_ytd_ontime,United Airlines,rank,3
+carrier_ytd_ontime,Southwest Airlines,percent_on_time_jan_jun_2026,72.06
+carrier_ytd_ontime,Southwest Airlines,rank,4
+carrier_ytd_ontime,American Airlines,percent_on_time_jan_jun_2026,71.02
+carrier_ytd_ontime,American Airlines,rank,5
+carrier_ytd_ontime,Allegiant Air,percent_on_time_jan_jun_2026,59.84
+carrier_ytd_ontime,Allegiant Air,rank,6
+carrier_june_ontime,Delta Air Lines (network),percent_on_time_june_2026,80.8
+carrier_june_ontime,Alaska Airlines (network),percent_on_time_june_2026,79.4
+carrier_june_ontime,United Airlines (network),percent_on_time_june_2026,73.9
+carrier_june_ontime,JetBlue Airways,percent_on_time_june_2026,73.6
+carrier_june_ontime,American Airlines (network),percent_on_time_june_2026,70.7
+carrier_june_ontime,Frontier Airlines,percent_on_time_june_2026,69.7
+carrier_june_ontime,Allegiant Air,percent_on_time_june_2026,68.2
+carrier_june_ontime,Southwest Airlines,percent_on_time_june_2026,65.3
+carrier_june_ontime,Industry total,percent_on_time_june_2026,73.1
+ontime_by_hour,06:00 arrival,percent_on_time_june_2026,88.9
+ontime_by_hour,07:00 arrival,percent_on_time_june_2026,90.7
+ontime_by_hour,08:00 arrival,percent_on_time_june_2026,89.5
+ontime_by_hour,09:00 arrival,percent_on_time_june_2026,87.8
+ontime_by_hour,10:00 arrival,percent_on_time_june_2026,86.1
+ontime_by_hour,11:00 arrival,percent_on_time_june_2026,84.6
+ontime_by_hour,12:00 arrival,percent_on_time_june_2026,83.5
+ontime_by_hour,13:00 arrival,percent_on_time_june_2026,81.2
+ontime_by_hour,14:00 arrival,percent_on_time_june_2026,79.2
+ontime_by_hour,15:00 arrival,percent_on_time_june_2026,76.6
+ontime_by_hour,16:00 arrival,percent_on_time_june_2026,72.6
+ontime_by_hour,17:00 arrival,percent_on_time_june_2026,71.5
+ontime_by_hour,18:00 arrival,percent_on_time_june_2026,69.0
+ontime_by_hour,19:00 arrival,percent_on_time_june_2026,66.4
+ontime_by_hour,20:00 arrival,percent_on_time_june_2026,66.1
+ontime_by_hour,21:00 arrival,percent_on_time_june_2026,64.1
+ontime_by_hour,22:00 arrival,percent_on_time_june_2026,62.9
+ontime_by_hour,23+:00 arrival,percent_on_time_june_2026,67.0

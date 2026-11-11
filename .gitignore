@@ -1,0 +1,86 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+.vercel
+
+# GSC credentials
+.secrets/
+
+# External tools (moved to D:\Whitelabel_flighko\tools)
+tools/
+marketing/tools/
+marketing/qa-personas/
+marketing/qa-reports/visual-v2/
+
+# Work artifacts (backups, temp, one-off scripts, reports)
+*.bak
+.tmp-*
+.hermes/
+preferences.md
+SEO-ANALYSIS-REPORT.md
+COMPETITOR-ANALYSIS-REPORT.md
+_index_submit.py
+submit_indexing.py
+replace_*.py
+enhance_*.py
+reports/
+
+# generated destination images (built from Pexels API at prebuild)
+src/data/dest-images.generated.ts
+# SEO research / QA / working artifacts (kept in flighko-knowledge brain, not the repo)
+semrush*
+serp*
+gsc-*
+paa-*
+toolbaazar*
+*_live.html
+*_preview*.html
+route-batch*
+routes-all.txt
+relist-*.txt
+coding-agent-*
+faq-schemas-*
+seo-analysis-*
+serp-analysis-*
+.tmp-*
+tsconfig.tsbuildinfo
+.venv-pixelrag/

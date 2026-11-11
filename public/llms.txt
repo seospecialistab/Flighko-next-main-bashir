@@ -1,0 +1,38 @@
+# Flighko — AI-Optimized Site Summary
+
+## About
+Flighko is a flight search comparison engine and travel blog. We help travelers find cheap flights by comparing prices across 200+ airlines. Our content includes flight route guides, destination guides, airline reviews, and travel hacks.
+
+## Key Pages
+- **Homepage:** https://flighko.com — Flight search with price comparison
+- **Flight Routes:** https://flighko.com/flight-routes — 200+ route guides with pricing data
+- **Destinations:** https://flighko.com/destinations — 10 destination travel guides
+- **Blog:** https://flighko.com/blog — 11 articles on flights, deals, and travel tips
+- **FAQ:** https://flighko.com/faq — Common questions about Flighko
+
+## Blog Posts
+- Flight Hacks 2026: How to Find the Cheapest Flights Every Time — https://flighko.com/blog/flight-hacks-2026
+- Best VPNs for Booking Cheap Flights in 2026 — https://flighko.com/blog/best-vpns-flight-booking-2026
+- How to Find Error Fares in 2026: The Complete Guide — https://flighko.com/blog/error-fares-guide-2026
+- Business Class Error Fares Routes 2026 — https://flighko.com/blog/business-class-error-fares-routes-2026
+- Best Travel Rewards Programs 2026 — https://flighko.com/blog/travel-rewards-programs-2026
+- Budget Airlines Comparison 2026 — https://flighko.com/blog/budget-airlines-comparison-2026
+- Budget Travel Latin America 2026 — https://flighko.com/blog/budget-travel-latin-america-2026
+- Google Flights Price Alerts Guide 2026 — https://flighko.com/blog/google-flights-price-alerts-guide-2026
+- Best eSIM for Travel in 2026 — https://flighko.com/blog/best-esim-for-travel-2026
+- Best Digital Nomad Destinations 2026 — https://flighko.com/blog/digital-nomad-destinations-2026
+- Last Minute Flight Deals 2026 — https://flighko.com/blog/last-minute-flight-deals-2026
+
+## Popular Routes
+- Bangkok to Tokyo — https://flighko.com/flight-routes/bangkok-to-tokyo
+- Bangkok to Singapore — https://flighko.com/flight-routes/bangkok-to-singapore
+- Cairo to Dubai — https://flighko.com/flight-routes/cairo-to-dubai
+- Cairo to Istanbul — https://flighko.com/flight-routes/cairo-to-istanbul
+- New York to London — https://flighko.com/flight-routes/new-york-to-london
+
+## Contact
+- Website: https://flighko.com
+- About: https://flighko.com/about
+
+## Last Updated
+July 2026

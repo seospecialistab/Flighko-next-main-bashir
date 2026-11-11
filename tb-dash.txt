@@ -1,0 +1,66 @@
+@vom 1
+@view 906x872
+@layers 1 focus=L1
+L1 page
+  RootWebArea "Your Membership Information"
+    banner "============================================================== End Logo ============================================================== This is for the sidebar toggle which is visible on mobile only =========================================="
+      navigation "============================================================== End Logo ============================================================== This is for the sidebar toggle which is visible on mobile only =========================================="
+        list "Notification End Notification ============================================================== create new =============================================================="
+          listitem
+            @e1 button "Bell [has-submenu]"
+        list "============================================================== User profile and search ============================================================== ============================================================== User profile and search ==="
+          listitem "<a class=\"dropdown-item\" href=\"/profile\"><i data-feather=\"settings\" class=\"svg-icon mr-2 ml-1\"></i> Account Setting</a> <a class=\"dropdown-item\" href=\"/helpdesk\"><i class=\"fas fa-ticket-alt mr-2 ml-1\"></i> Support Tickets</a> <a class=\"drop"
+            @e2 link "avatar logo [has-submenu]"
+    complementary "Sidebar scroll End Sidebar scroll Sidebar navigation End Sidebar navigation <li class=\"nav-small-cap\"><span class=\"hide-menu\">Profile</span></li> <li class=\"sidebar-item\"> <a class=\"sidebar-link\" href=\"/profile\" aria-expanded=\"false\"><i cla"
+      navigation "<li class=\"nav-small-cap\"><span class=\"hide-menu\">Profile</span></li> <li class=\"sidebar-item\"> <a class=\"sidebar-link\" href=\"/profile\" aria-expanded=\"false\"><i class=\"fas fa-user\"></i><span class=\"hide-menu\">Profile </span></a> </li> <li c"
+        list "<li class=\"nav-small-cap\"><span class=\"hide-menu\">Profile</span></li> <li class=\"sidebar-item\"> <a class=\"sidebar-link\" href=\"/profile\" aria-expanded=\"false\"><i class=\"fas fa-user\"></i><span class=\"hide-menu\">Profile </span></a> </li> <li c"
+          listitem
+            @e3 link "Dashboard"
+          listitem
+          listitem
+            @e4 link ""
+          listitem
+            @e5 link ""
+          listitem
+            @e6 link ""
+          listitem
+            @e7 link ""
+          listitem
+            @e8 link ""
+          listitem
+          listitem "USER GUIDE"
+          listitem
+            @e9 link ""
+          listitem
+            @e10 link ""
+          listitem
+          listitem
+    heading "👋 hey, timonhussien"
+      StaticText "👋 hey, timonhussien"
+    navigation "breadcrumb"
+      list
+        listitem
+    heading "Active Subscriptions"
+      StaticText "Active Subscriptions"
+    alert "Semrush 1-Click 04 – expires 10/14/26"
+      list "Semrush 1-Click 04 – expires 10/14/26"
+        listitem "Semrush 1-Click 04 – expires 10/14/26"
+          strong "Semrush 1-Click 04"
+            StaticText "Semrush 1-Click 04"
+          StaticText "–"
+          StaticText "expires"
+          StaticText "10/14/26"
+    heading "Active Resources"
+      StaticText "Active Resources"
+    alert ".dis_pimg { display: flex; justify-content: center; align-items: center; flex-direction: column; border: 1px solid grey; padding: 10px; border-radius: 5px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); transition: transform 0.2s; } .dis_pimg"
+      @e11 textbox "Search Any Tool .." [empty] placeholder="Search Any Tool .."
+      @e12 link
+        img
+      @e13 link "Semrush 1-Click 6"
+      @e14 link
+        img
+      @e15 link "Site Audit 02"
+    contentinfo "Made with ❤️ by"
+      @e16 link "Toolbaazar.com" [→ toolbaazar.com]
+      StaticText "Made with ❤️ by"
+    StaticText "?>"

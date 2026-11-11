@@ -1,0 +1,202 @@
+/* ============================================================
+   blog-design-tokens.css
+   Source of truth = Blog Section Map audit (blog-section-map.html)
+   Design option B · Flighko. Apply globally — no per-post edits.
+   Tokens: navy #0F172A · orange #FF6B35 · rule #E2E8F0 · muted #64748B
+           surface #F8FAFC · body #334155
+   ============================================================ */
+
+:root {
+  --kt-navy: #0F172A;
+  --kt-orange: #FF6B35;
+  --kt-orange-cta: #CC4A14;   /* white-text CTA bg per brand token */
+  --kt-rule: #E2E8F0;
+  --kt-muted: #64748B;
+  --kt-surface: #F8FAFC;
+  --kt-body: #334155;
+  --kt-radius: 16px;
+  --kt-radius-sm: 12px;
+}
+
+/* ---- KEY TAKEAWAYS card (replaces TL;DR) ---- */
+.tldr {
+  background: var(--kt-surface);
+  border: 1px solid var(--kt-rule);
+  border-radius: var(--kt-radius);
+  box-shadow: none;
+  padding: 32px;            /* 24px mobile */
+  margin: 2.5rem 0;
+}
+@media (max-width: 768px) {
+  .tldr { padding: 24px; }
+}
+.tldr h2,
+.tldr .lbl {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--kt-navy);
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0 0 24px;
+}
+.tldr ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--kt-body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.tldr li {
+  position: relative;
+  padding-left: 20px;        /* dot-text gap 12-16px + 8px dot */
+  margin-bottom: 24px;       /* item rhythm */
+}
+.tldr li:last-child { margin-bottom: 0; }
+.tldr li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--kt-orange);  /* single marker only, native bullet removed */
+}
+
+/* ---- Article body copy ---- */
+.article-content,
+.prose {
+  color: var(--kt-body);
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 820px;
+}
+.article-content p,
+.prose p {
+  margin: 0 0 1.25rem;
+}
+.article-content a,
+.prose a {
+  color: var(--kt-orange);
+  font-weight: 600;
+  text-underline-offset: 2px;
+}
+.article-content a:hover,
+.prose a:hover { color: var(--kt-orange-cta); }
+.article-content strong,
+.prose strong { color: var(--kt-navy); font-weight: 700; }
+
+/* ---- H2 / H3 section heads (clean, no icon) ---- */
+.article-content h2,
+.prose h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--kt-navy);
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 2.5rem 0 1rem;
+  scroll-margin-top: 5rem;
+}
+.article-content h3,
+.prose h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--kt-navy);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 1.5rem 0 0.5rem;
+  scroll-margin-top: 5rem;
+}
+
+/* ---- Comparison tables ---- */
+.article-content table,
+.prose table {
+  width: 100%;
+  border: 1px solid var(--kt-rule);
+  border-radius: var(--kt-radius-sm);
+  border-collapse: collapse;
+  overflow: hidden;
+}
+.article-content table th,
+.prose table th {
+  background: var(--kt-navy);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+.article-content table td,
+.prose table td {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1E293B;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--kt-rule);
+}
+.article-content table td:first-child,
+.prose table td:first-child { color: var(--kt-orange); font-weight: 700; }
+
+/* ---- Callout (pro-tip / stat) ---- */
+.callout,
+.pro-tip {
+  background: #FFF1EA;
+  border-left: 4px solid var(--kt-orange);
+  border-radius: 0 12px 12px 0;
+  padding: 1.1rem 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1E293B;
+}
+
+/* ---- FAQ accordion ---- */
+.article-content details,
+.prose details {
+  border-top: 1px solid var(--kt-rule);
+}
+.article-content details:last-of-type,
+.prose details:last-of-type { border-bottom: 1px solid var(--kt-rule); }
+.article-content summary,
+.prose summary {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--kt-navy);
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  list-style: none;
+}
+.article-content details p,
+.prose details p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1E293B;
+  padding: 0 0 1rem;
+}
+
+/* ---- Destination / guide card titles: centered under image ---- */
+.article-content a.block p {
+  text-align: center;
+}
+
+/* ---- Upgraded card design (destination + guide cards) ---- */
+.article-content a.block.bg-white {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: none;
+}
+.article-content a.block.bg-white:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
+}
+.article-content a.block.bg-white img {
+  transition: transform 0.3s ease;
+}
+.article-content a.block.bg-white:hover img {
+  transform: scale(1.04);
+}

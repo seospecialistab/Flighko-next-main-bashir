@@ -1,0 +1,876 @@
+/* Tailwind CSS v4 — must be first */
+@import "tailwindcss";
+
+:root {
+  --navy: #0F2A4A;
+  --orange: #FF6B35;
+  --orange-cta: #CC4A14; /* AA-compliant CTA bg: 4.6:1 with white text; accent #FF6B35 stays for stats/borders */
+    --orange-text: #C2410C; /* AA-compliant orange for text-on-light (5.2:1 on white) */
+    --orange-hover: #e55a24;
+    --dark: #0a0a0a;
+    --gray: #6b7280;
+    --gray-light: #9ca3af;
+    --light: #FAFAFA;
+    --border: rgba(0,0,0,0.06);
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.08);
+    --radius: 16px;
+    --radius-sm: 10px;
+    --h2-border: 3px solid #FF6B35;
+
+  /* Hallmark-compliant tokens */
+  --focus-color: #FF6B35;
+  --focus-width: 2px;
+  --focus-offset: 2px;
+  --transition-slow: 800ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow-hover: 900ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+  /* ─── Flighko design system ─── */
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--navy);
+    border-top: var(--h2-border);
+  }
+
+  /* ─── End Flighko design system ─── */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Reveal animation */
+.reveal {
+  /* LCP-safe reveal: content starts visible (paintable), animates transform only.
+     opacity was delaying LCP for below-fold sections (text invisible until scroll). */
+  transform: translateY(20px);
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.visible {
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { transform: none; transition: none; }
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(15, 42, 74, 0.95);
+  backdrop-filter: blur(12px);
+  padding: 0 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.navbar__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+.navbar__logo svg {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.navbar__logo:hover svg {
+  transform: rotate(-8deg) scale(1.1);
+}
+.navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 4px;
+}
+.navbar__links a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.navbar__links a:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Hamburger toggle — hidden on desktop, shown on mobile */
+.navbar__cta { list-style: none; }
+.navbar__btn {
+  display: inline-block;
+  background: var(--orange-cta);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.navbar__btn:hover { background: #b53f10; transform: translateY(-1px); }
+.navbar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color var(--transition-slow-hover), background var(--transition-slow-hover);
+}
+.navbar__toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.navbar__toggle:focus-visible {
+  outline: var(--focus-width) solid var(--focus-color) !important;
+  outline-offset: var(--focus-offset) !important;
+  box-shadow: none !important;
+}
+
+/* Force hamburger focus styles with higher specificity */
+.navbar .navbar__toggle:focus-visible,
+nav .navbar__toggle:focus-visible {
+  outline: var(--focus-width) solid var(--focus-color) !important;
+  outline-offset: var(--focus-offset) !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .navbar__toggle { display: block; }
+  .navbar__links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(15, 42, 74, 0.98);
+    backdrop-filter: blur(12px);
+    padding: 0.5rem 1.5rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  .navbar__links.open {
+    max-height: 420px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .navbar__links li { width: 100%; }
+  .navbar__links a {
+    display: block;
+    padding: 12px 8px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+  .navbar__cta { margin-top: 0.5rem; }
+  .navbar__btn { display: block; text-align: center; padding: 14px 8px; font-size: 1rem; }
+}
+
+/* Tag/Eyebrow */
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--orange);
+  background: rgba(255, 107, 53, 0.08);
+  padding: 6px 14px;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+}
+
+/* Hero */
+.hero-wrap {
+  padding: 6rem 1.5rem 4rem;
+  background: linear-gradient(160deg, #0F2A4A 0%, #0b1f38 50%, #0F2A4A 100%);
+  position: relative;
+}
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Focus rings — Hallmark Gate 10 compliant */
+:focus-visible {
+  outline: var(--focus-width) solid var(--focus-color) !important;
+  outline-offset: var(--focus-offset) !important;
+  box-shadow: none !important;
+}
+
+/* Ensure focus rings have 3:1 contrast on all backgrounds */
+:focus-visible {
+  /* On dark backgrounds (navbar, hero) */
+  outline-color: var(--focus-color);
+}
+.navbar__toggle:focus-visible {
+  outline: var(--focus-width) solid var(--focus-color) !important;
+  outline-offset: var(--focus-offset) !important;
+  box-shadow: none !important;
+}
+
+/* Reduced motion — Hallmark Gate 8 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Slow hover transitions — Hallmark Gate 8 (800-1000ms) */
+.navbar__links a {
+  transition: color var(--transition-slow-hover), background var(--transition-slow-hover);
+}
+.navbar__btn {
+  transition: background var(--transition-slow-hover), transform var(--transition-slow-hover);
+}
+.navbar__logo svg {
+  transition: transform var(--transition-slow);
+}
+
+/* Search Bar */
+
+/* Sections */
+.section {
+  padding: 5rem 1.5rem;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+}
+.section-header h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.45rem, 3vw, 1.9rem);
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+}
+.section-header__link {
+  color: var(--orange);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap var(--transition-slow-hover);
+}
+.section-header__link:hover {
+  gap: 8px;
+}
+.section-border {
+  border-top: 1px solid var(--border);
+}
+
+/* Trust Grid */
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.trust-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: all var(--transition-slow);
+  position: relative;
+  overflow: hidden;
+}
+.trust-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--orange);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-slow);
+}
+.trust-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+.trust-card:hover::before {
+  transform: scaleX(1);
+}
+.trust-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(15, 42, 74, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  transition: all var(--transition-slow);
+}
+.trust-card:hover .trust-card__icon {
+  background: rgba(255, 107, 53, 0.08);
+}
+.trust-card__icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--navy);
+  transition: color var(--transition-slow);
+}
+.trust-card:hover .trust-card__icon svg {
+  color: var(--orange);
+}
+.trust-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+.trust-card p {
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.5;
+}
+
+/* Domestic Grid */
+.domestic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.domestic-item {
+  background: white;
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all var(--transition-slow-hover);
+  font-size: 0.9rem;
+}
+.domestic-item:hover {
+  border-color: var(--orange);
+  box-shadow: var(--shadow-sm);
+  transform: translateX(2px);
+}
+
+/* FAQ */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  background: white;
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+  transition: all var(--transition-slow-hover);
+}
+.faq-item:hover {
+  border-color: rgba(15, 42, 74, 0.1);
+  box-shadow: var(--shadow-sm);
+}
+.faq-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+.faq-item p {
+  font-size: 0.9rem;
+  color: var(--gray);
+  line-height: 1.6;
+  max-width: 65ch;
+}
+
+/* Footer */
+.footer {
+  background: var(--navy);
+  color: white;
+  padding: 4rem 0 2rem;
+}
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 3rem;
+}
+.footer__col h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer__col ul {
+  list-style: none;
+}
+.footer__col li {
+  margin-bottom: 10px;
+}
+.footer__col a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color var(--transition-slow-hover);
+}
+.footer__col a:hover {
+  color: white;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer__bottom p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+.footer__social {
+  display: flex;
+  gap: 12px;
+}
+.footer__social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255, 107, 53, 0.1);
+  color: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-slow-hover);
+}
+.footer__social a:hover {
+  background: rgba(255, 107, 53, 0.2);
+  transform: translateY(-1px);
+}
+.footer__social a:focus-visible {
+  outline: var(--focus-width) solid var(--focus-color) !important;
+  outline-offset: var(--focus-offset) !important;
+}
+
+/* Cards */
+.destination-card {
+  transition: all var(--transition-slow);
+}
+.destination-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  background: white !important;
+}
+.route-card {
+  transition: all var(--transition-slow-hover);
+}
+.route-card:hover {
+  border-color: var(--orange) !important;
+  box-shadow: var(--shadow-sm);
+  transform: translateX(2px);
+}
+.blog-card {
+  transition: all var(--transition-slow);
+}
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  opacity: 0.95;
+}
+.blog-card:focus-visible {
+  outline: var(--focus-width) solid var(--focus-color) !important;
+  outline-offset: var(--focus-offset) !important;
+}
+.how-it-works-card {
+  transition: all var(--transition-slow);
+}
+.how-it-works-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+.how-it-works-card:focus-visible {
+  outline: var(--focus-width) solid var(--focus-color) !important;
+  outline-offset: var(--focus-offset) !important;
+}
+
+/* Popular routes grid (M1: real responsive cards replacing blank TPWL divs) */
+.popular-routes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+.popular-route-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  color: var(--text);
+  font-weight: 600;
+  transition: transform var(--transition-slow-hover), border-color var(--transition-slow-hover);
+}
+.popular-route-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--orange);
+}
+.popular-route-card__route {
+  display: flex;
+  flex-direction: column;
+}
+.popular-route-card__note {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+/* AA contrast: orange eyebrow text on light backgrounds must be >=4.5:1 */
+.tag {
+  color: var(--orange-text) !important;
+}
+.popular-route-card__price {
+  color: var(--orange-text);
+  font-weight: 700;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+/* WhyBest stats (M2: grid, 2-col mobile / 4-col desktop) */
+.whybest-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+@media (min-width: 769px) and (max-width: 900px) {
+  .whybest-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Newsletter */
+.newsletter-form input:focus {
+  border-color: var(--orange) !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+@media (max-width: 768px) {
+  .hero-wrap { padding: 5rem 1rem 2rem; }
+  .hero h1 { font-size: clamp(1.4rem, 5vw, 1.8rem); line-height: 1.2; }
+  /* Travelpayouts widget containers: clip overflow on mobile so the widget's
+     fixed-width card can't extend past the viewport edge (blank-strip fix).
+     #tpwl-main is a global body-level container from layout.tsx — outside
+     .hero-wrap, so it also needs clipping. */
+  #tpwl-main,
+  #tpwl-search,
+  #tpwl-tickets,
+  .tpwl-wrap {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .hero { overflow: hidden; max-width: 100%; }
+  .domestic-grid { grid-template-columns: 1fr; }
+  .popular-routes-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .whybest-stats { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .section { padding: 3.5rem 1rem; }
+  .section-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer__bottom { flex-direction: column; gap: 16px; text-align: center; }
+  .footer__newsletter { margin-top: 0; }
+  .footer__newsletter > div { flex-direction: column; }
+  .footer__newsletter input { width: 100%; }
+  /* tpemd content widget responsive */
+  .tpemd-widget,
+  [id^="tp-widget-"] {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  /* EN/USD selector from Travelpayouts — hide on very small screens */
+  .tp-lang-select,
+  .tp-currency-select {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 480px) {
+  .trust-grid { grid-template-columns: 1fr; }
+  .popular-routes-grid { grid-template-columns: 1fr; }
+  .hero-wrap { padding: 4rem 0.75rem 1.5rem; }
+  .hero h1 { font-size: 1.35rem; }
+}
+
+/* Travelpayouts widget: darken "Show hotels" label for readability */
+/* Broad覆盖 — catch every possible class name the widget uses */
+[class*="show-hotels"] label,
+[class*="show-hotels"] span,
+[class*="show_hotels"] label,
+[class*="show_hotels"] span,
+[class*="checkbox"] label,
+[class*="checkbox"] span,
+[class*="check"] + span,
+[class*="check"] + label,
+.tpemd-content__show-hotels label,
+.tpemd-content__checkbox-label,
+.tpemd-content__show-hotels span,
+.tpemd-content input[type="checkbox"] + span,
+.tpemd-content label,
+/* Also target by text content — dark grey for any small text near checkboxes */
+.tpemd-content small,
+.tpemd-content [class*="option"],
+.tpemd-content [class*="toggle"],
+.tpemd-content [class*="switch"] {
+  color: #1E293B !important;
+  font-weight: 500 !important;
+
+/* Override H2 weight to 700 for VPN blog section */
+.article-content h2 { font-weight: 700 !important; }
+.article-content h3 { font-weight: 600 !important; }
+}
+
+/* Nuclear option: override ALL text color inside the widget to be darker */
+.tpemd-content * {
+  color: #374151 !important;
+}
+
+/* But keep the input fields, buttons, and links their original colors */
+.tpemd-content input,
+.tpemd-content button,
+.tpemd-content a,
+.tpemd-content [class*="btn"],
+.tpemd-content [class*="button"],
+.tpemd-content [class*="link"],
+.tpemd-content [class*="icon"],
+.tpemd-content svg,
+.tpemd-content img {
+  color: revert !important;
+}
+
+/* ─── Article Content Heading Hierarchy (D2/D3 Fix) ─── */
+/* Scoped to blog article content only - fixes H2 400→700, H3 600/700→600 */
+.article-content h2 {
+  font-weight: 700 !important;
+}
+.article-content h3 {
+  font-weight: 600 !important;
+}
+
+/* ─── Consistent orange heading decoration (D2 icon-inconsistency fix) ───
+   Every section heading (h2 AND h3) gets ONE orange accent marker.
+   h2: top rule (section divider). h3: left accent bar (subsection marker).
+   This removes the 1-vs-2 "square" visual inconsistency flagged in the audit. */
+.article-content h2 {
+  border-top: 3px solid #FF6B35;
+  padding-top: 1.25rem;
+}
+.article-content h3 {
+  border-left: 3px solid #FF6B35;
+  padding-left: 0.75rem;
+}
+
+/* Ensure proper hierarchy: H2 (700) > H3 (600) */
+.article-content h2,
+.article-content h3 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ─── R3: List / CTA / CLS polish (D2 visual-qa pass) ─── */
+/* Bullet + numbered list formatting inside article body */
+.article-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.25rem 0;
+}
+.article-content ul > li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+.article-content ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: #FF6B35;
+}
+.article-content ol {
+  padding-left: 1.5rem;
+  margin: 1.25rem 0;
+  counter-reset: vpnol;
+}
+.article-content ol > li {
+  margin-bottom: 0.6rem;
+  padding-left: 0.25rem;
+  line-height: 1.6;
+}
+.article-content ol > li::marker {
+  color: #FF6B35;
+  font-weight: 700;
+}
+
+/* CTA card consistency — enforce brand orange on in-article CTA links */
+.article-content a.block.bg-\[#f97316\],
+.article-content a[class*="bg-[#f97316]"] {
+  background-color: #FF6B35 !important;
+}
+.article-content a.block.bg-\[#f97316\]:hover,
+.article-content a[class*="bg-[#f97316]"]:hover {
+  background-color: #E85A28 !important;
+}
+
+/* CLS safety — images already carry width/height; lock aspect + prevent overflow */
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* ============================================
+   SECTION TITLE TOKENS (homepage sections)
+   ============================================ */
+.section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.45rem, 3vw, 1.9rem);
+  font-weight: 700;
+  color: #0F172A;
+  letter-spacing: -0.02em;
+}
+.section-title--sm {
+  font-size: 1.35rem;
+}
+
+/* ============================================
+   ROUTE PAGE RESPONSIVE (FlightRoutePage.tsx)
+   ============================================ */
+
+/* Content + sidebar layout: stack on tablet/mobile */
+.route-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 3rem;
+}
+.route-layout > * {
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .route-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Bullet lists: 2 columns desktop, 1 column mobile */
+.route-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  column-count: 2;
+  column-gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .route-bullets {
+    column-count: 1;
+  }
+}
+
+/* Stat band: wrap into rows on small screens */
+.route-stats {
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media (max-width: 768px) {
+  .route-stats {
+    flex-wrap: wrap;
+  }
+  .route-stats > * {
+    flex: 1 1 40% !important;
+    min-width: 0 !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.12) !important;
+  }
+  .route-stats > *:nth-last-child(-n+2):not(:only-child) {
+    border-bottom: none !important;
+  }
+}
+
+/* KEY TAKEAWAYS card — single orange dot marker (B reference) */
+.tldr { box-shadow: none !important; }
+.tldr ul { list-style: none; }
+.tldr li::before { content: ""; position: absolute; left: 0; top: 0.55rem; width: 8px; height: 8px; border-radius: 50%; background: #FF6B35; }
+
+/* ── V1 responsive fix: blog TOC sidebar must not overflow mobile ── */
+@media (max-width: 768px) {
+  .blog-shell { grid-template-columns: 1fr !important; gap: 2rem !important; }
+  .blog-toc { position: static !important; top: auto !important;
+              border-top: 1px solid #E2E8F0; padding-top: 1rem;
+              order: -1; }
+}

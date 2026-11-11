@@ -1,0 +1,5 @@
+.venv-pixelrag
+gsc-reports
+gsc-report-*.json
+semrush-*
+__pycache__
